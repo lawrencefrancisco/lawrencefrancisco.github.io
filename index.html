@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lawrence Francisco – IT Student Portfolio. Showcasing web development, UI/UX design, and creative projects for OJT applications." />
+  <title>Lawrence Francisco | IT Student Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">LF<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+          <span class="theme-toggle-track">
+            <span class="theme-toggle-thumb">
+              <i class="fas fa-moon theme-icon-dark"></i>
+              <i class="fas fa-sun theme-icon-light"></i>
+            </span>
+          </span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+
+    <!-- Animated background grid -->
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+
+    <!-- Scan line effect -->
+    <div class="hero-scanline" aria-hidden="true"></div>
+
+    <!-- Floating particles -->
+    <div class="hero-particles" aria-hidden="true">
+      <span class="particle p1"></span>
+      <span class="particle p2"></span>
+      <span class="particle p3"></span>
+      <span class="particle p4"></span>
+      <span class="particle p5"></span>
+      <span class="particle p6"></span>
+    </div>
+
+    <!-- Glowing orbs -->
+    <div class="hero-bg-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-container">
+
+      <!-- LEFT: Text Content -->
+      <div class="hero-text" data-aos="fade-right">
+
+        <!-- Available chip -->
+        <div class="hero-chip">
+          <span class="chip-dot"></span>
+          <span class="chip-label">Available for OJT &amp; Internship</span>
+        </div>
+
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Lawrence <span class="gradient-text">Francisco</span></h1>
+
+        <!-- Typewriter role -->
+        <div class="hero-role-wrap">
+          <span class="hero-role-prefix">&gt;&nbsp;</span>
+          <span class="hero-role-typed" id="hero-role-typed"></span>
+          <span class="hero-cursor">|</span>
+        </div>
+
+        <p class="hero-tagline">Crafting clean code, beautiful interfaces, and creative experiences — ready to bring value to your team.</p>
+
+        <!-- Buttons (unchanged) -->
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+
+        <!-- Social icons -->
+        <div class="hero-bottom-row">
+          <div class="hero-socials">
+            <a href="https://github.com/lawrencefrancisco" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lawrence-dhaniel-francisco-383558285/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/iam0nlyme.197.vn" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <!-- Stat pills -->
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="stat-number">UI/UX</span>
+              <span class="stat-label">Design</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="stat-number">BSIT</span>
+              <span class="stat-label">Degree</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Image -->
+      <div class="hero-image-wrap" data-aos="fade-left">
+
+        <!-- Aurora glow -->
+        <div class="hero-aurora" aria-hidden="true"></div>
+
+        <!-- Outer spinning dashed ring -->
+        <div class="hero-ring-outer" aria-hidden="true"></div>
+
+        <!-- Inner solid ring -->
+        <div class="hero-ring-inner" aria-hidden="true"></div>
+
+        <!-- Orbital dot -->
+        <div class="hero-orbital" aria-hidden="true"><span></span></div>
+
+        <!-- Image -->
+        <div class="hero-img-container">
+          <img src="assets/image/profile.jpg" alt="Lawrence Francisco" class="hero-img" />
+          <div class="hero-img-shimmer" aria-hidden="true"></div>
+        </div>
+
+        <!-- Badge 1: IT Student (bottom-right) -->
+        <div class="hero-badge">
+          <i class="fas fa-laptop-code"></i>
+          <span>IT Student</span>
+        </div>
+
+        <!-- Badge 2: Web Dev (top-left) -->
+        <div class="hero-badge-2">
+          <i class="fas fa-code"></i>
+          <span>Web Dev</span>
+        </div>
+
+        <!-- Badge 3: UI/UX (bottom-left) -->
+        <div class="hero-badge-3">
+          <i class="fas fa-pen-ruler"></i>
+          <span>UI/UX</span>
+        </div>
+
+        <!-- Badge 4: Graphics Design (top-right) -->
+        <div class="hero-badge-4">
+          <i class="fas fa-palette"></i>
+          <span>Graphics Design</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span class="scroll-label">Scroll</span>
+      <div class="scroll-dot"></div>
+    </div>
+
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A passionate IT student eager to grow and contribute</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-images" data-aos="fade-right">
+          <div class="about-img-main">
+            <img src="assets/image/pic1.jpg" alt="Lawrence Francisco" />
+          </div>
+          <div class="about-img-secondary">
+            <div class="about-img-sm">
+              <img src="assets/image/pic2.jpg" alt="Lawrence Francisco" />
+            </div>
+            <div class="about-img-sm about-img-accent">
+              <img src="assets/image/pic3.jpeg" alt="Lawrence Francisco" />
+            </div>
+          </div>
+          <!-- <div class="about-exp-badge">
+            <span class="exp-number">IT</span>
+            <span class="exp-label">Student</span>
+          </div> -->
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <h3 class="about-heading">Passionate about tech, design, and making ideas come to life.</h3>
+          <p class="about-text">
+            Hi! I'm <strong>Lawrence Francisco</strong>, a dedicated IT student with a strong passion for web development, UI/UX design, and multimedia production. I thrive at the intersection of technology and creativity, always looking for ways to build meaningful digital experiences.
+          </p>
+          <p class="about-text">
+            Throughout my academic journey, I've honed my skills in front-end development, prototyping, and visual design. I enjoy collaborating with teams, solving real-world problems through technology, and continuously learning new tools and frameworks that keep me at the forefront of the industry.
+          </p>
+          <p class="about-text">
+            I am actively seeking an OJT opportunity where I can apply my knowledge, contribute to meaningful projects, and grow alongside experienced professionals.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <span class="info-label">Course</span>
+                <span class="info-value">Bachelor of Science in Information Technology</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Philippines</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">lawrence.dhaniel@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <span class="info-label">Status</span>
+                <span class="info-value">Open for OJT / Internship</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-cta-row">
+            <a href="#contact" class="btn btn-primary">Let's Connect <i class="fas fa-arrow-right"></i></a>
+            <a href="assets/Lawrence_Francisco_Resume.pdf" download="Lawrence_Francisco_Resume.pdf" class="btn btn-resume"><i class="fas fa-download"></i> Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-icon-wrap skill-html">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h4 class="skill-name">HTML</h4>
+          <p class="skill-desc">Semantic markup &amp; web structure</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="skill-icon-wrap skill-css">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h4 class="skill-name">CSS</h4>
+          <p class="skill-desc">Styling, layouts &amp; animations</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-icon-wrap skill-js">
+            <i class="fab fa-js"></i>
+          </div>
+          <h4 class="skill-name">JavaScript</h4>
+          <p class="skill-desc">Interactive web functionality</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-icon-wrap skill-php">
+            <i class="fab fa-php"></i>
+          </div>
+          <h4 class="skill-name">PHP</h4>
+          <p class="skill-desc">Server-side web development</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-icon-wrap skill-tailwind">
+            <i class="fas fa-wind"></i>
+          </div>
+          <h4 class="skill-name">Tailwind CSS</h4>
+          <p class="skill-desc">Utility-first CSS framework</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="skill-icon-wrap skill-figma">
+            <i class="fab fa-figma"></i>
+          </div>
+          <h4 class="skill-name">Figma</h4>
+          <p class="skill-desc">UI/UX prototyping &amp; wireframing</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-icon-wrap skill-uiux">
+            <i class="fas fa-pen-ruler"></i>
+          </div>
+          <h4 class="skill-name">UI/UX Design</h4>
+          <p class="skill-desc">User-centered design thinking</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="skill-icon-wrap skill-canva">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h4 class="skill-name">Canva</h4>
+          <p class="skill-desc">Graphic design &amp; visual content</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-icon-wrap skill-ps">
+            <i class="fas fa-image"></i>
+          </div>
+          <h4 class="skill-name">Photoshop</h4>
+          <p class="skill-desc">Photo editing &amp; digital art</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="450">
+          <div class="skill-icon-wrap skill-video">
+            <i class="fas fa-film"></i>
+          </div>
+          <h4 class="skill-name">Video Editing</h4>
+          <p class="skill-desc">Storytelling through video</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A showcase of my academic and personal projects</p>
+      </div>
+
+      <!-- Project 1: VrakeIT Web Application -->
+      <div class="project-card project-featured" data-aos="fade-up">
+        <div class="project-label"><i class="fas fa-globe"></i> Web Application</div>
+        <div class="project-content">
+          <div class="project-gallery">
+            <div class="gallery-main">
+              <img src="assets/image/webapp1.png" alt="VrakeIT Web App Screenshot 1" class="gallery-main-img" id="gallery-main-img" />
+            </div>
+            <div class="gallery-thumbs">
+              <img src="assets/image/webapp1.png" alt="VrakeIT Screenshot 1" class="thumb active" onclick="changeMain(this, 'assets/image/webapp1.png')" />
+              <img src="assets/image/webapp2.png" alt="VrakeIT Screenshot 2" class="thumb" onclick="changeMain(this, 'assets/image/webapp2.png')" />
+              <img src="assets/image/webapp3.png" alt="VrakeIT Screenshot 3" class="thumb" onclick="changeMain(this, 'assets/image/webapp3.png')" />
+              <img src="assets/image/webapp4.png" alt="VrakeIT Screenshot 4" class="thumb" onclick="changeMain(this, 'assets/image/webapp4.png')" />
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag-badge">PHP · HTML · CSS · JavaScript</span>
+            <h3 class="project-title">VrakeIT Web Application</h3>
+            <p class="project-desc">
+              VrakeIT is a full-featured web application developed as part of our IT course. It serves as a comprehensive platform integrating user management, an administrative dashboard, and real-time data visualization. The system was built with a focus on usability, clean interface design, and seamless functionality across different user roles including administrators and field enforcers.
+            </p>
+            <p class="project-desc">
+              The project demonstrates my ability to work with back-end technologies like PHP alongside front-end tools, resulting in a cohesive and functional system ready for real-world deployment.
+            </p>
+            <!-- <div class="project-actions">
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+              <a href="#" class="btn btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Pathrol Wireframe -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-label"><i class="fab fa-figma"></i> UI/UX Design</div>
+        <div class="project-content project-content-alt">
+          <div class="project-info">
+            <span class="project-tag-badge">Figma · Wireframe · Prototype</span>
+            <h3 class="project-title">Pathrol – Wireframe &amp; Prototype</h3>
+            <p class="project-desc">
+              Pathrol is a UI/UX design project created in Figma, featuring a complete wireframe and interactive prototype. The design focuses on an intuitive navigation experience for a patrol and route management application. Every screen was carefully crafted with user flow in mind — from onboarding to core functionality — ensuring a seamless and accessible interface for end users.
+            </p>
+            <p class="project-desc">
+              This project highlights my skills in information architecture, interaction design, and high-fidelity prototyping within Figma's collaborative environment.
+            </p>
+            <div class="project-actions">
+              <a href="https://www.figma.com/proto/OXNEHBXeBxaMwGUlG6HbTE/pathrol?node-id=9-19&starting-point-node-id=9%3A19&t=E2R18sEmboqjWjUF-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fab fa-figma"></i> View Prototype</a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <img src="assets/image/figma1.png" alt="Pathrol Figma Prototype Preview" class="project-preview-img" />
+            <div class="preview-overlay">
+              <a href="https://www.figma.com/proto/OXNEHBXeBxaMwGUlG6HbTE/pathrol?node-id=9-19&starting-point-node-id=9%3A19&t=E2R18sEmboqjWjUF-1" target="_blank" rel="noopener noreferrer" class="preview-btn"><i class="fas fa-external-link-alt"></i> Open Prototype</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Disc Duel Wireframe -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-label"><i class="fab fa-figma"></i> Game Design</div>
+        <div class="project-content">
+          <div class="project-preview">
+            <img src="assets/image/figma2.png" alt="Disc Duel Figma Prototype Preview" class="project-preview-img" />
+            <div class="preview-overlay">
+              <a href="https://www.figma.com/proto/imqlVaihHe2p75adBUFPOy/MAHARLIKA-S-NFT--DISC-DUEL-?node-id=1-5&starting-point-node-id=1%3A5&t=Dd1ZswPLRmuIPKdn-1" target="_blank" rel="noopener noreferrer" class="preview-btn"><i class="fas fa-external-link-alt"></i> Open Prototype</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag-badge">Figma · Game UI · Prototype</span>
+            <h3 class="project-title">Disc Duel – Game Wireframe &amp; Prototype</h3>
+            <p class="project-desc">
+              Disc Duel is a game UI/UX design project developed in Figma as part of a creative academic challenge. The prototype presents a full game interface concept, complete with main menu screens, gameplay HUD layouts, and interactive flow mapping. The design blends dynamic visual elements with clear navigational structure to create an engaging game experience.
+            </p>
+            <p class="project-desc">
+              This project reflects my versatility in design — moving beyond standard apps to explore the unique challenges of game interface design, including visual hierarchy, feedback systems, and immersive aesthetics.
+            </p>
+            <div class="project-actions">
+              <a href="https://www.figma.com/proto/imqlVaihHe2p75adBUFPOy/MAHARLIKA-S-NFT--DISC-DUEL-?node-id=1-5&starting-point-node-id=1%3A5&t=Dd1ZswPLRmuIPKdn-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fab fa-figma"></i> View Prototype</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Mataya-Taya Demo Reel -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-label"><i class="fas fa-film"></i> Video Production</div>
+        <div class="project-content project-content-alt">
+          <div class="project-info">
+            <span class="project-tag-badge">Video Editing · Motion Graphics</span>
+            <h3 class="project-title">Mataya-Taya – Demo Reel</h3>
+            <p class="project-desc">
+              This demo reel was crafted to showcase our video game "Mataya-Taya" — a thrilling Filipino-inspired action game developed as part of our academic capstone. I was responsible for the complete video editing process, including scene selection, pacing, transitions, sound design, and motion graphics, producing a high-energy promotional reel that captures the essence and excitement of the game.
+            </p>
+            <p class="project-desc">
+              The project demonstrates my ability to tell compelling visual stories and produce polished, professional-quality video content for creative and commercial purposes.
+            </p>
+          </div>
+          <div class="project-video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/dppjyZFFQ5g"
+              title="Mataya-Taya Demo Reel"
+              class="project-video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              aria-label="Mataya-Taya Demo Reel"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Entrepreneurship Group Project -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-label"><i class="fas fa-video"></i> Video Production</div>
+        <div class="project-content">
+          <div class="project-video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/arxlRdYSIms"
+              title="Entrepreneurship Group Project Video"
+              class="project-video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              aria-label="Entrepreneurship Group Project Video"
+            ></iframe>
+          </div>
+          <div class="project-info">
+            <span class="project-tag-badge">Video Editing · Creative Direction</span>
+            <h3 class="project-title">Entrepreneurship – Group Project Video</h3>
+            <p class="project-desc">
+              This video was produced for our Entrepreneurship subject as a group project, where I led the creative direction and video editing process. The film presents our group's business concept through a clear, engaging, and professionally structured narrative — covering the problem statement, proposed solution, target market, and value proposition.
+            </p>
+            <p class="project-desc">
+              This project showcases my skills in collaborative content creation, visual storytelling, and my ability to translate complex business ideas into compelling video presentations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Personal Portfolio Website -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-label"><i class="fas fa-globe"></i> Web Development</div>
+        <div class="project-content project-content-alt">
+          <div class="project-info">
+            <span class="project-tag-badge">HTML · CSS · JavaScript · Web Dev</span>
+            <h3 class="project-title">Personal Portfolio – Demo Reel</h3>
+            <p class="project-desc">
+              This is a demo reel of my very first personal portfolio website, built from scratch as part of my Web Development subject. It marks the beginning of my journey into front-end development — from learning the fundamentals of HTML and CSS to crafting a complete, responsive personal showcase from the ground up.
+            </p>
+            <p class="project-desc">
+              The project reflects my growth as a web developer and my drive to present myself professionally online. Every design decision and line of code in this first portfolio was a hands-on learning experience that shaped my skills today.
+            </p>
+          </div>
+          <div class="project-video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/rcgGsaKWskw"
+              title="Personal Portfolio Demo Reel"
+              class="project-video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              aria-label="Personal Portfolio Demo Reel"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7: Validate Website (Backend) -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-label"><i class="fas fa-server"></i> Backend Development</div>
+        <div class="project-content">
+          <div class="project-video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/QgG09Pb6144"
+              title="VALidate Website Demo"
+              class="project-video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              aria-label="VALidate Website Demo"
+            ></iframe>
+          </div>
+          <div class="project-info">
+            <span class="project-tag-badge">PHP · MySQL · Backend · Web Dev</span>
+            <h3 class="project-title">Validate – Backend Development</h3>
+            <p class="project-desc">
+              For the Validate website, I was responsible for architecting and implementing the entire backend system. This included server-side logic, database design, user authentication, and data validation — ensuring the platform runs reliably, securely, and efficiently behind the scenes.
+            </p>
+            <p class="project-desc">
+              This project highlights my backend development capabilities, showcasing my ability to build robust, scalable server-side systems that power functional and secure web applications.
+            </p>
+            <div class="project-actions">
+              <a href="https://validate-lemon.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 1: VrakeIT Web Application -->
+      <div class="project-card project-featured" data-aos="fade-up">
+        <div class="project-label"><i class="fas fa-robot"></i> Certificates</div>
+        <div class="project-content">
+          <div class="project-gallery">
+            <div class="gallery-main">
+              <img src="assets/image/robotics-cerificate.png" alt="Certificate Screenshot 1" class="gallery-main-img" id="gallery-main-img" />
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag-badge">Robotics · Engineering · Programming</span>
+            <h3 class="project-title">Certificate in Robotics</h3>
+            <p class="project-desc">
+              Awarded for participation and successful completion of a robotics program, demonstrating hands-on proficiency in robot design, hardware assembly, and microcontroller programming.
+            </p>
+            <p class="project-desc">
+               This certificate reflects my commitment to expanding beyond software — exploring the intersection of hardware and code through real-world robotics challenges.
+            </p>
+            <!-- <div class="project-actions">
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+              <a href="#" class="btn btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+   
+
+  <!-- ========== RESUME SECTION ========== -->
+  <section class="resume-section" id="resume">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Qualifications</span>
+        <h2 class="section-title">Re<span class="gradient-text">sume</span></h2>
+        <p class="section-subtitle">Creative blueprint summary. Download the PDF for complete presentation.</p>
+      </div>
+
+      <div class="resume-grid">
+
+        <!-- Left: Profile Archive Card -->
+        <div class="resume-card" data-aos="fade-right">
+          <span class="resume-archive-label">// PROFILE ARCHIVE</span>
+
+          <div class="resume-profile-row">
+            <div class="resume-profile-left">
+              <h3 class="resume-name">Lawrence Francisco</h3>
+              <p class="resume-role">IT Student &amp; Aspiring Developer</p>
+              <p class="resume-specs">[ Web Development / UI&#8203;UX Design / Frontend Dev / Multimedia ]</p>
+            </div>
+            <div class="resume-profile-right">
+              <div class="resume-meta-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Philippines</span>
+              </div>
+              <div class="resume-meta-item">
+                <i class="fas fa-envelope"></i>
+                <span>lawrence.dhaniel@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-divider"></div>
+
+          <div class="resume-block">
+            <h4 class="resume-block-title">Professional Objective</h4>
+            <p class="resume-block-text">BSIT student passionate about web development, UI/UX design, and multimedia production. Seeking OJT opportunities to deliver quality digital experiences, clean code, and creative design solutions that make a real impact.</p>
+          </div>
+
+          <div class="resume-divider"></div>
+
+          <div class="resume-bottom-grid">
+            <div class="resume-focus">
+              <h4 class="resume-block-title">Focus Matrix</h4>
+              <p class="resume-focus-degree"><strong>Information Technology</strong></p>
+              <p class="resume-focus-school">PLV Campus</p>
+              <p class="resume-focus-tag">&#9679; Web Dev // Systems Core</p>
+              <p class="resume-focus-tag">&#9679; UI/UX // Interface Design</p>
+              <p class="resume-focus-tag">&#9679; Multimedia // Creative Production</p>
+            </div>
+            <div class="resume-expertise">
+              <h4 class="resume-block-title">Expertise Disciplines</h4>
+              <div class="resume-tags">
+                <span class="resume-tag">Figma</span>
+                <span class="resume-tag">Canva</span>
+                <span class="resume-tag">HTML</span>
+                <span class="resume-tag">CSS</span>
+                <span class="resume-tag">Video Editing</span>
+                <span class="resume-tag">Graphics Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Download Card -->
+        <div class="resume-download-card" data-aos="fade-left">
+          <h3 class="resume-dl-title">Download PDF</h3>
+          <p class="resume-dl-desc">Grab the full, comprehensive copy containing detailed pipeline processes and workflow breakdowns.</p>
+          <div class="resume-dl-dot"></div>
+          <a href="assets/Lawrence_Francisco_Resume.pdf" download="Lawrence_Francisco_Resume.pdf" class="resume-dl-btn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <div class="resume-dl-ring"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Open for OJT opportunities and collaborations</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <h3 class="contact-heading">Ready to bring value to your team</h3>
+          <p class="contact-text">I'm actively looking for OJT opportunities where I can apply my skills in web development, UI/UX design, and multimedia production. Feel free to reach out — I'd love to discuss how I can contribute to your organization.</p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">lawrence.dhaniel@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-card-label">Phone</span>
+                <span class="contact-card-value">+63 969 430 9741</span>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-card-label">Location</span>
+                <span class="contact-card-value">Philippines</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/lawrencefrancisco" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lawrence-dhaniel-francisco-383558285/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/iam0nlyme.197.vn" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+            <!-- Web3Forms -->
+            <input type="hidden" name="access_key" value="4d0d6a1a-4543-4379-acc1-98a35f394346" />
+            <input type="hidden" name="subject" value="New Message from Portfolio – Let's Connect" />
+            <input type="hidden" name="from_name" value="Lawrence Francisco Portfolio" />
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <div class="input-wrap">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-wrap">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="input-wrap">
+                <i class="fas fa-tag"></i>
+                <input type="text" id="subject" name="subject" placeholder="OJT Application / Collaboration" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrap input-wrap-textarea">
+                <i class="fas fa-comment-dots"></i>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <span class="btn-text">Send Message <i class="fas fa-paper-plane"></i></span>
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">LF<span class="dot">.</span></div>
+      <p class="footer-text">Designed &amp; built by <strong>Lawrence Francisco</strong> · IT Student Portfolio</p>
+      <p class="footer-copy">&copy; 2026 Lawrence Francisco. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+    <img src="" alt="Full size image" class="lightbox-img" id="lightbox-img" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
